@@ -1,3 +1,4 @@
+let mapleader=","
 set smartindent
 set tabstop=2
 set shiftwidth=4
@@ -23,3 +24,12 @@ map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 map + :resize +1<CR>
 map _ :resize -1<CR>
+function! ToggleScratch()
+    if expand('%') == g:ScratchBufferName
+        quit 
+    else 
+        Sscratch 
+    endif 
+endfunction
+
+map <leader>s :call ToggleScratch()<CR>
