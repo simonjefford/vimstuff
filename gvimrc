@@ -8,3 +8,5 @@ if has('fullscreen')
 endif
 set lines=50
 set columns=110
+set guifont=Bitstream\ Vera\ Sans\ Mono:h14
+" colorscheme torte
