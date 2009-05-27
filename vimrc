@@ -1,7 +1,7 @@
 let mapleader=","
 set smartindent
 set tabstop=2
-set shiftwidth=4
+set shiftwidth=2
 set expandtab
 set laststatus=2
 set incsearch
