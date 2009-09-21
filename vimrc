@@ -40,7 +40,7 @@ set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
 
 " ,s to show trailing whitespace
 set listchars=tab:>-,trail:·,eol:$
-nmap <silent> <leader>s :set nolist!<CR>
+nmap <silent> <leader>W :set nolist!<CR>
 
 " ,h to toggle search result highlighting
 :noremap <silent> <leader>h :set hls!<CR>
