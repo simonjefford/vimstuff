@@ -8,7 +8,6 @@ set smarttab
 set hlsearch
 set sessionoptions=blank,buffers,curdir,folds,help,resize,tabpages,winsize
 set guioptions-=T " no toolbar
-set statusline=%<%f\ %h%m%r%=%-20.(line=%l,col=%c%V,totlin=%L%)\%h%m%r%=%-40(,%n%Y%)\%P
 set laststatus=2  " Always show status line.
 set number " line numbers
 set scrolloff=3 " More context around cursor
@@ -36,9 +35,11 @@ set statusline+=%{strlen(&fenc)?&fenc:&enc}%{&bomb?'/bom':''}, " encoding
 set statusline+=%{&fileformat}]              " file format
 set statusline+=%=                           " right align
 set statusline+=0x%-8B\                      " current char
-set statusline+=%-14.(%l,%c%V%)\ %<%P        " offset
+set statusline+=%-14.(%l/%L,%c%V%)\ %<%P        " offset
 
-" ,s to show trailing whitespace
+let mapleader=","
+
+" ,W to show trailing whitespace
 set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>W :set nolist!<CR>
 
@@ -62,8 +63,6 @@ let g:speckyWindowType = 1
 
 nmap <silent> <Leader>m :NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>. :BufExplorer<CR>
-
-let mapleader=","
 
 autocmd FileType make set noexpandtab
 autocmd FileType python set noexpandtab
