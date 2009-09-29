@@ -127,3 +127,7 @@ endfunction
 
 noremap RR :call OpenRailsDoc(expand('<cword>'))<CR>
 
+" Source a local configuration file if available.
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
