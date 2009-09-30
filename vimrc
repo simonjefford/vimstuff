@@ -128,4 +128,6 @@ function! OpenRailsDoc(keyword)
 endfunction
 
 noremap RR :call OpenRailsDoc(expand('<cword>'))<CR>
-
+augroup mkd
+  autocmd BufRead *.markdown set ai formatoptions=tcroqn2 comments=n:>
+augroup END
