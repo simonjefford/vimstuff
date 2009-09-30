@@ -64,7 +64,6 @@ let g:speckySpecSwitcherKey = "<Leader>sx"
 let g:speckyRunSpecKey = "<Leader>ss"
 let g:speckyWindowType = 1
 
-nmap <silent> <Leader>m :NERDTreeToggle<CR>
 nmap <silent> <unique> <Leader>. :BufExplorer<CR>
 
 autocmd FileType make set noexpandtab
