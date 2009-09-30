@@ -128,6 +128,12 @@ function! OpenRailsDoc(keyword)
 endfunction
 
 noremap RR :call OpenRailsDoc(expand('<cword>'))<CR>
+
 augroup mkd
   autocmd BufRead *.markdown set ai formatoptions=tcroqn2 comments=n:>
 augroup END
+
+" Source a local configuration file if available.
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
