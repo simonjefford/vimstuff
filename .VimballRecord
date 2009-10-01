@@ -1,1 +1,2 @@
 tComment.vba: call delete('/Users/simon/.vim/doc/tComment.txt')|call delete('/Users/simon/.vim/plugin/tComment.vim')|call delete('/Users/simon/.vim/autoload/tcomment.vim')
+manpageview.vba: call delete('/Users/simon/.vim/plugin/manpageviewPlugin.vim')|call delete('/Users/simon/.vim/autoload/manpageview.vim')|call delete('/Users/simon/.vim/syntax/man.vim')|call delete('/Users/simon/.vim/syntax/mankey.vim')|call delete('/Users/simon/.vim/syntax/info.vim')|call delete('/Users/simon/.vim/syntax/manphp.vim')|call delete('/Users/simon/.vim/doc/manpageview.txt')
