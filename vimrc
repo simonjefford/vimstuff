@@ -133,6 +133,8 @@ augroup mkd
   autocmd BufRead *.markdown set ai formatoptions=tcroqn2 comments=n:>
 augroup END
 
+nnoremap <silent> <F8> :TlistToggle<CR>
+
 " Source a local configuration file if available.
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
