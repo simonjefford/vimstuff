@@ -42,9 +42,6 @@ set statusline+=%-14.(%l/%L,%c%V%)\ %<%P        " offset
 
 let mapleader=","
 
-" ,W to show trailing whitespace
-set listchars=tab:>-,trail:·,eol:$
-nmap <silent> <leader>W :set nolist!<CR>
 
 " ,h to toggle search result highlighting
 :noremap <silent> <leader>h :set hls!<CR>
@@ -136,6 +133,4 @@ augroup END
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 " Source a local configuration file if available.
-if filereadable(expand("~/.vimrc.local"))
-  source ~/.vimrc.local
-endif
+source ~\_vimrc.local
