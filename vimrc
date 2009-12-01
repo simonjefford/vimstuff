@@ -39,6 +39,7 @@ set statusline+=%{&fileformat}]              " file format
 set statusline+=%=                           " right align
 set statusline+=0x%-8B\                      " current char
 set statusline+=%-14.(%l/%L,%c%V%)\ %<%P        " offset
+set shellcmdflag=-ic
 
 let mapleader=","
 
@@ -80,6 +81,9 @@ map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 map + :resize +1<CR>
 map _ :resize -1<CR>
+map < :vertical resize -1<CR>
+map > :vertical resize +1<CR>
+
 function! ToggleScratch()
     if expand('%') == g:ScratchBufferName
         quit 
