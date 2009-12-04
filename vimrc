@@ -29,6 +29,9 @@ set ruler  " Ruler on
 set nowrap  " Line wrapping off
 set timeoutlen=500
 
+"so backspace will work in windows
+set bs=2
+
 set statusline=
 set statusline+=%3.3n\                       " buffer number
 set statusline+=%f\                          " file name
