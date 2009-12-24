@@ -28,6 +28,7 @@ set autowrite  " Writes on make/shell commands
 set ruler  " Ruler on
 set nowrap  " Line wrapping off
 set timeoutlen=500
+set linebreak
 
 set statusline=
 set statusline+=%3.3n\                       " buffer number
