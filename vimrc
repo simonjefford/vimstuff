@@ -28,6 +28,7 @@ set autowrite  " Writes on make/shell commands
 set ruler  " Ruler on
 set nowrap  " Line wrapping off
 set timeoutlen=500
+set linebreak
 
 "so backspace will work in windows
 set bs=2
