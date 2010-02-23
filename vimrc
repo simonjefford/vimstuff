@@ -55,7 +55,7 @@ let mapleader=","
 :map <silent> <Leader>w :set wrap!<CR>
 
 map <Leader>r :Rake<CR>
-map <silent> <Leader>rb :RunAllRubyTests<CR>
+map <silent> <Leader>rb :w<CR>:RunAllRubyTests<CR>
 map <silent> <Leader>rc :RunRubyFocusedContext<CR>
 map <silent> <Leader>rf :RunRubyFocusedUnitTest<CR>
 
