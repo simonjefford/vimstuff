@@ -141,7 +141,7 @@ augroup END
 
 nnoremap <silent> <F8> :TlistToggle<CR>
 
-autocmd BufEnter * if bufname("") !~ "^\[A-Za-z0-9\]*://" | lcd %:p:h | endif
+:command Pcd lcd %:p:h
 
 " Source a local configuration file if available.
 source ~\_vimrc.local
