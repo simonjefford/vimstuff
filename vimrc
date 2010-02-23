@@ -28,6 +28,7 @@ set autowrite  " Writes on make/shell commands
 set ruler  " Ruler on
 set nowrap  " Line wrapping off
 set timeoutlen=500
+set linebreak
 
 set statusline=
 set statusline+=%3.3n\                       " buffer number
@@ -96,7 +97,8 @@ map <leader>s :call ToggleScratch()<CR>
 
 " Folding settings
 set foldmethod=indent "fold based on indent
-set foldnestmax=3     "deepest fold is 3 levels
+set foldnestmax=10
+set foldlevel=1
 set nofoldenable      "dont fold by default
 
 " Jump to last cursor position when opening a file
