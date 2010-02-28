@@ -65,6 +65,7 @@ let g:speckyQuoteSwitcherKey = "<Leader>s'"
 let g:speckySpecSwitcherKey = "<Leader>sx"
 let g:speckyRunSpecKey = "<Leader>ss"
 let g:speckyWindowType = 1
+let g:fuzzy_ignore="input/*"
 
 nmap <silent> <unique> <Leader>. :BufExplorer<CR>
 
