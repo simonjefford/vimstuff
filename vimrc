@@ -172,6 +172,9 @@ endfunction
 
 call EnableBracketCompletion()
 
+nmap <leader>= :ZoomIn<CR>
+nmap <leader>- :ZoomOut<CR>
+
 " Source a local configuration file if available.
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
