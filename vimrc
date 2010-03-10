@@ -73,12 +73,6 @@ autocmd FileType make set noexpandtab
 autocmd FileType python set noexpandtab
 syn on
 
-let g:fuzzy_ignore = "*.log"
-let g:fuzzy_matching_limit = 70
-
-map <leader>t :FuzzyFinderTextMate<CR>
-map <leader>b :FuzzyFinderBuffer<CR>
-
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
 map + :resize +1<CR>
