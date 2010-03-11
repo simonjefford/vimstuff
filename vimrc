@@ -67,7 +67,7 @@ let g:speckyRunSpecKey = "<Leader>ss"
 let g:speckyWindowType = 1
 let g:fuzzy_ignore="input/*"
 
-nmap <silent> <unique> <Leader>. :BufExplorer<CR>
+nmap <silent> <unique> <Leader>. :BufferExplorer<CR>
 
 autocmd FileType make set noexpandtab
 autocmd FileType python set noexpandtab
