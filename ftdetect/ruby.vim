@@ -1,1 +1,1 @@
-autocmd BufNewFile,BufReadPost *.god,*.ru set filetype=ruby
+autocmd BufNewFile,BufReadPost *.god,*.ru,Gemfile set filetype=ruby
