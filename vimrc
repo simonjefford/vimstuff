@@ -75,11 +75,6 @@ syn on
 
 map <leader>d :execute 'NERDTreeToggle ' . getcwd()<CR>
 
-map + :resize +1<CR>
-map _ :resize -1<CR>
-map < :vertical resize -1<CR>
-map > :vertical resize +1<CR>
-
 function! ToggleScratch()
     if expand('%') == g:ScratchBufferName
         quit 
@@ -175,6 +170,10 @@ call EnableBracketCompletion()
 nmap <leader>= :ZoomIn<CR>
 nmap <leader>- :ZoomOut<CR>
 
+map + :resize +1<CR>
+map _ :resize -1<CR>
+map < :vertical resize -1<CR>
+map > :vertical resize +1<CR>
 " Source a local configuration file if available.
 if filereadable(expand("~/.vimrc.local"))
   source ~/.vimrc.local
