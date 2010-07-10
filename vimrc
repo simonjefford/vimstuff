@@ -1,6 +1,9 @@
 filetype on
 filetype indent on
 filetype plugin on
+
+call pathogen#runtime_append_all_bundles()
+
 set smartindent
 set tabstop=2
 set shiftwidth=2
